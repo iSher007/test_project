@@ -1,6 +1,5 @@
-from django.urls import path, include
+from django.urls import path
 from .views import *
-
 
 urlpatterns = [
     path('<int:shop_id>/categories/<int:category_id>/', index, name='index'),
